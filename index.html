@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="main.js"></script>
   </head>
 
   <body>
-    <p>This is a test!</p>
-    <p>Smol edit</p>
+    <input id="todoinput" type="text" placeholder="Enter item" />
+    <button onclick="addListItem()">Add</button>
+
+    <ul id="todolist">
+      <li>
+        <input class="checkbox" type="checkbox" onclick="toggleItem(this)" />
+        <label>Get groceries</label>
+        <button class="delete" onclick="deleteListItem(this)">X</button>
+      </li>
+    </ul>
   </body>
 </html>
